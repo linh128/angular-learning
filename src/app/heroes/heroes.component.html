@@ -1,0 +1,14 @@
+<h2>Heroes list</h2>
+<div class="hero-list">
+    <ul class="heroes">
+
+        <button *ngFor="let hero of heroes" class="button button4" (click)="onSelect(hero)" type="button">
+            <span class="badge">{{hero.id}}</span>
+            <span class="name">{{hero.name}}</span>
+        </button>
+
+    </ul>
+</div>
+
+<!-- Add component "hero detail" with a INPUT hero = selectedHero -->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>

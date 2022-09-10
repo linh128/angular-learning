@@ -1,0 +1,32 @@
+.name {
+    margin-left: 30px;
+}
+
+.cancel{
+    justify-content: center;
+}
+
+.button {
+    background-color: #e7e7e7; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 250px;
+  }
+
+  .button4 { color: black;}
+
+.button {
+    transition-duration: 0.4s;
+}
+
+.button4:hover {
+    background-color: #9b9b9b;
+}
