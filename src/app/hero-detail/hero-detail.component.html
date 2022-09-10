@@ -1,4 +1,4 @@
-<div *ngIf="hero!=null">
+<div style="text-align: center;" *ngIf="hero!=null">
 
     <h2> Hero Detail: </h2>
     <div>
@@ -7,6 +7,7 @@
     <div>
         <label for="hero-name">Hero name: </label>
         <input id="hero-name" [(ngModel)]="hero.name" placeholder="name"><br/>
+        <button type="button" (click)="goBack()">go back</button>
     </div>
 
 </div>

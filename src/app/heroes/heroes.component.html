@@ -1,14 +1,22 @@
-<h2>Heroes list</h2>
-<div class="hero-list">
-    <ul class="heroes">
+<div style="text-align: center;">
+    <h2>Heroes list</h2>
+    <div class="hero-list">
+        <ul class="heroes-menu">
 
-        <button *ngFor="let hero of heroes" class="button button4" (click)="onSelect(hero)" type="button">
+            <!-- <button *ngFor="let hero of heroes" class="button button4" (click)="onSelect(hero)" type="button">
             <span class="badge">{{hero.id}}</span>
             <span class="name">{{hero.name}}</span>
-        </button>
+        </button> -->
 
-    </ul>
+            <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+                <span class="badge">{{hero.id}}</span> {{hero.name}}
+            </a>
+
+        </ul>
+    </div>
 </div>
 
 <!-- Add component "hero detail" with a INPUT hero = selectedHero -->
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!-- <div>
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+</div> -->
